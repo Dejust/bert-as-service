@@ -63,6 +63,7 @@ def get_args_parser():
 
     group1 = parser.add_argument_group('File Paths',
                                        'config the path, checkpoint and filename of a pretrained/fine-tuned BERT model')
+    group1.add_argument('-num_labels', type=int, default=2)
     group1.add_argument('-model_dir', type=str, required=True,
                         help='directory of a pretrained BERT model')
     group1.add_argument('-tuned_model_dir', type=str,

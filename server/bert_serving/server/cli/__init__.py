@@ -1,4 +1,10 @@
+import sys
+
+
 def main():
+    print('####################', file=sys.stderr)
+    print('# RUN JetTeam FORK #', file=sys.stderr)
+    print('####################', file=sys.stderr)
     from bert_serving.server import BertServer
     from bert_serving.server.helper import get_run_args
     args = get_run_args()
